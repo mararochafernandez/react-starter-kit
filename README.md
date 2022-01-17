@@ -1,5 +1,5 @@
 # My React Starter Kit ✨
 
-- Sass dependency
+- Dependency: node-sass
 - `npm run githubpages`
 - Services: API and local storage

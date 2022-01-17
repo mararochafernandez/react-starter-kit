@@ -15,7 +15,7 @@ function App() {
   /*
   useEffect(() => {
     callToApi().then((response) => {
-      data(response);
+      setData(response);
     });
   }, []);
   */
