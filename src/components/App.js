@@ -2,6 +2,9 @@ import '../styles/App.scss';
 //import { useEffect, useState } from 'react';
 //import callToApi from '../services/api';
 //import localStorage from '../services/localstorage';
+//import { v4 as uuid } from 'uuid';
+
+//console.log(uuid());
 
 function App() {
   /* Let's do magic! 🦄🦄🦄 */
@@ -10,7 +13,7 @@ function App() {
 
   // api
 
-  //const [data, setData] = useState({});
+  //const [data, setData] = useState([]);
 
   /*
   useEffect(() => {
@@ -36,16 +39,18 @@ function App() {
   */
 
   /*
-  localStorage.set('data', {
-    name: name,
-    email: email,
-  });
+  useEffect(() => {
+    localStorage.set('data', {
+      name: name,
+      email: email,
+    });
+  }, [data]);
   */
 
   return (
     // HTML ✨
 
-    <div className="app">{getTitle('Hola mundo')}</div>
+    <div className="app">{getTitle('Happy coding!')}</div>
   );
 }
 

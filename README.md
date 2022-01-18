@@ -1,5 +1,5 @@
 # My React Starter Kit ✨
 
-- Dependency: node-sass
-- `npm run githubpages`
-- Services: API and local storage
+- NPM dependencies: `node-sass` `node-uuid`
+- Services: API and Local Storage
+- Publish in GitHub Pages: `npm run githubpages`
