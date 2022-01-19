@@ -6,4 +6,4 @@
 
 ---
 
-Happy coding!
+_Happy coding!_
