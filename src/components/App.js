@@ -3,6 +3,7 @@ import '../styles/App.scss';
 //import callToApi from '../services/api';
 //import localStorage from '../services/localstorage';
 //import { v4 as uuid } from 'uuid';
+//import { Link, Route, Switch } from 'react-router-dom';
 
 //console.log(uuid());
 
