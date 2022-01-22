@@ -1,9 +1,10 @@
 import '../styles/App.scss';
 //import { useEffect, useState } from 'react';
 //import callToApi from '../services/api';
-//import localStorage from '../services/localstorage';
+//import ls from '../services/localstorage';
 //import { v4 as uuid } from 'uuid';
-//import { Link, Route, Switch } from 'react-router-dom';
+//import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+//import PropTypes from 'prop-types';
 
 //console.log(uuid());
 
@@ -18,30 +19,30 @@ function App() {
 
   /*
   useEffect(() => {
-    callToApi().then((response) => {
-      setData(response);
+    callToApi().then((dataFromApi) => {
+      setData(dataFromApi);
     });
   }, []);
   */
 
   // local storage
 
-  //const [name, setName] = useState(localStorage.get('name', ''));
-  //const [email, setEmail] = useState(localStorage.get('email', ''));
+  //const [name, setName] = useState(ls.get('name', ''));
+  //const [email, setEmail] = useState(ls.get('email', ''));
 
-  //useState(localStorage.get('data', {}).name || '');
-  //useState(localStorage.get('data', {}).email || '');
+  //useState(ls.get('data', {}).name || '');
+  //useState(ls.get('data', {}).email || '');
 
   /*
   useEffect(() => {
-    localStorage.set('name', name);
-    localStorage.set('email', email);
+    ls.set('name', name);
+    ls.set('email', email);
   }, [name, email]);
   */
 
   /*
   useEffect(() => {
-    localStorage.set('data', {
+    ls.set('data', {
       name: name,
       email: email,
     });
@@ -54,5 +55,23 @@ function App() {
     <div className="app">{getTitle('Happy coding!')}</div>
   );
 }
+
+// default props
+
+/*
+NombreDelComponente.defaultProps = {
+  nombreDeLaProp1: 'valorPorDefectoDeLaProp1',
+  nombreDeLaProp2: 'valorPorDefectoDeLaProp2',
+};
+*/
+
+// prop types
+
+/*
+NombreDeMiComponente.propTypes = {
+  nombreDeMiPropDeTipoStringOpcional: PropTypes.string,
+  nombreDeMiPropDeTipoStringObligatoria: PropTypes.string.isRequired
+}
+*/
 
 export default App;
