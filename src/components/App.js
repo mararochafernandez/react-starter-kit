@@ -11,8 +11,6 @@ import '../styles/App.scss';
 function App() {
   /* Let's do magic! 🦄🦄🦄 */
 
-  const getTitle = (text) => <h1>{text}</h1>;
-
   // api
 
   //const [data, setData] = useState([]);
@@ -46,13 +44,13 @@ function App() {
       name: name,
       email: email,
     });
-  }, [data]);
+  }, [name, email]);
   */
 
   return (
     // HTML ✨
 
-    <div className="app">{getTitle('Happy coding!')}</div>
+    <div>Happy coding!</div>
   );
 }
 
